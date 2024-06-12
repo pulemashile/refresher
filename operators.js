@@ -42,5 +42,5 @@ p*=3
 console.log(p)
 p/=2
 console.log(p)
-p%=9
+p%=5
 console.log(p)
