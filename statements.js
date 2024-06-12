@@ -28,3 +28,26 @@ switch (true) {
 }
 
 console.log("temperature:"+" "+condition)
+
+
+let num=5
+let divisibility;
+
+switch (true) {
+    case (num%2 && num%3):
+        divisibility="divisible by both";
+        break;
+    case num/2 :
+        divisibility="divisible by 2";
+        break
+    case num%3  :
+            divisibility="divisible by 3";
+        break
+        case !(num%2 && num%3):
+            divisibility="not divisible by 2 or 3";
+    
+        break;
+}
+
+console.log("divisibility:"+" "+divisibility)
+
