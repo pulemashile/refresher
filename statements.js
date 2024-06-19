@@ -153,21 +153,22 @@ do {
 
 let randomNumber = Math.floor(Math.random() * 10) + 1;
 
-let userGuess;5
+
 let attempts = 0;
+let num
 
 do {
-  userGuess = parseInt(prompt("Guess a number between 1 and 10:"));
+  num= prompt("Guess a number between 1 and 10:")
+  console.log(Number(num)+' '+ randomNumber)
   attempts++;
 
-  if (userGuess === randomNumber) {
-    console.log(`Congratulations!${randomNumber} in ${attempts} attempts.`);
-  } else if (userGuess < randomNumber) {
-    console.log("is too low");
-  } else {
-    console.log("drop it a bit");
+ } while (Number(num) !== randomNumber);
+
+  if (Number(num) === randomNumber) {
+    alert(`Congratulations!${randomNumber} in ${attempts} attempts.`)
   }
-} while (userGuess !== randomNumber);
+  
+
 
 
 
